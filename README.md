@@ -1,4 +1,4 @@
-# ENTREGA PORTAFOLIO M2
+# ENTREGA PORTAFOLIO M2: Ecommerce para tienda de lentes de sol.
 
 ## Cuenta GitHub: este repositorio permitirá ver y actualizar el código
 
