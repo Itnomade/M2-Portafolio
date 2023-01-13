@@ -65,4 +65,4 @@ let productos = [
         imagen: "./assets/img/img glass 9 fashion-black.jpg"
 
     },  
-]
+  ];

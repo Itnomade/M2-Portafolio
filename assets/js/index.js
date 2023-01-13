@@ -1,27 +1,25 @@
 
 let productosCarro = [];
 
-if(localStorage.getItem("productos")){
-    productosCarro = JSON.parse(localStorage.getItem("productos"))
-    console.log(productosCarro)
+if(localStorage.getItem("productos")) {
+    productosCarro = JSON.parse(localStorage.getItem("productos"));
+    console.log(productosCarro);
     actualizarCarro(productosCarro);
  
-}else{
-    productosCarro = []; 
+ 
 }
-
-
 
 cargarProductos(productos);
 
+
 //FUNCION ENCARGADA DE CARGAR PRODUCTOS 
 function cargarProductos(listadoProductos){
+    console.log(listadoProductos)
 
     let acumulador = "";
+    listadoProductos.forEach((producto) => {
+        console.log(producto)
 
-    listadoProductos.forEach(producto => {
-
-        
         let template = `
         
             <div class="col-12 col-md-6 col-lg-4 my-2">
@@ -91,7 +89,7 @@ function actualizarCarro(listadoProductos){
     document.querySelector("#cantidad-productos").innerText = sumaProductos;
 } 
 
-cargarProductos();
+
 
 
 
